@@ -1,0 +1,66 @@
+baseURL = "https://lordashworth.github.io/"
+languageCode = "en-gb"
+title = "The Ashworth Archive"
+theme = "PaperMod"
+copyright = "© 2026 Lord Ashworth"
+
+[params]
+  description = "Dispatches on the preservation and revival of computational artefacts."
+  author = "Lord Ashworth"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = "The Ashworth Archive"
+    Content = "Dispatches on the preservation and revival of computational artefacts. A digital antiquarian's journal, penned by Lord Ashworth."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/TheThingInTheThing"
+
+[params.profileMode]
+  enabled = true
+  title = "The Ashworth Archive"
+  subtitle = "On the preservation and revival of computational artefacts. By Lord Ashworth — independent scholar, digital antiquarian, custodian of abandoned code."
+  imageUrl = ""
+  imageTitle = ""
+
+  [[params.profileMode.buttons]]
+    name = "Dispatches"
+    url = "/posts"
+
+  [[params.profileMode.buttons]]
+    name = "The Workbench"
+    url = "/workbench"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    guessSyntax = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    identifier = "dispatches"
+    name = "Dispatches"
+    url = "/posts"
+    weight = 10
+  [[menu.main]]
+    identifier = "workbench"
+    name = "Workbench"
+    url = "/workbench"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 30
